@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela Alunos</title>
+    <link rel="stylesheet" href="./StyleO.css">
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="bg-video">
+            <!-- Verifique se o caminho do vídeo está correto -->
+            <video autoplay muted loop src="./img/video.mp4"></video>
+        </div>
+        <div class="container">
+            <header>
+                <img src="./img/IMG_4874.PNG" alt="logo">
+                <h1>Área de Aprendizado</h1>
+                <div class="search-box">
+                    <input type="text" placeholder="Palavra-chave">
+                    <button>Buscar</button>
+                </div>
+                <div class="icons">
+                    <abbr title="Configurações"><i class="fas fa-cog"></i></abbr>
+                    <abbr title="Perfil"><i class="fas fa-user"></i></abbr>
+                    <abbr title="Logout"><i class="fas fa-sign-out-alt"></i></abbr>
+                </div>
+            </header>
+            
+            <main>
+                <section class="sidebar">
+                    <h3><u>Acesso Disponíveis</u></h3>
+                    <ul>
+                        <li><a href="./Curso.html"><i class="fa-solid fa-video"></i> Video Aulas</a></li>
+                        <li><a href="./certificado.html"><i class="fa-solid fa-bookmark"></i> Certificados</a></li>
+                        <li><a href="#" onclick="mostrarPacoteOffice()"><i class="fa-solid fa-file"></i> Pacote Office</a></li>
+                    </ul>
+                </section>
+                
+                <!-- Conteúdo da direita, onde os ícones do Pacote Office aparecerão -->
+                <section class="content" id="office-apps" style="display: none;">
+                    <h3>Aplicativos do Pacote Office</h3>
+                    <ul class="office-list">
+                        <li><a href="https://www.office.com/launch/word"><i class="fas fa-file-word"></i> Microsoft Word</a></li>
+                        <li><a href="https://www.office.com/launch/excel"><i class="fas fa-file-excel"></i> Microsoft Excel</a></li>
+                        <li><a href="https://www.office.com/launch/powerpoint"><i class="fas fa-file-powerpoint"></i> Microsoft PowerPoint</a></li>
+                        <li><a href="https://www.office.com/launch/onedrive"><i class="fas fa-cloud"></i> OneDrive</a></li>
+                        <li><a href="https://www.office.com/launch/outlook"><i class="fas fa-envelope"></i> Outlook</a></li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

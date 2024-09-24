@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(90deg, #057dcd 0%, #0a0a0a9f 100%);
+    background-image: url(./img/background.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0a0a0a9f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #fffcf1; /* Cor amarela para os títulos das seções */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #30363d;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/* Estilizando o grid dos vídeos */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas */
+    gap: 20px; /* Espaçamento entre os vídeos */
+    margin-bottom: 40px;
+}
+
+.video-container {
+    text-align: center;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Efeito hover nos vídeos */
+.video-container video:hover {
+    transform: scale(1.05); /* Leve zoom ao passar o mouse */
+}
+
+.video-container p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+}

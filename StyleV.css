@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background:linear-gradient(90deg, #057dcd 0%, #0a0a0a9f 100%);
+    background-image: url(./img/background.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0a0a0a9f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 60px;
+    font-size: 22pt;
+    margin-top: 10px;
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px; /* Espaçamento entre os vídeos */
+    margin-bottom: 20px;
+}
+ h2 {
+    color: #fffcf1; /* Cor amarela para os títulos das seções */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #30363d;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+/* Estilizando o grid dos vídeos */
+.video-grid {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas */
+    gap: 20px; /* Espaçamento entre os vídeos */
+    margin-bottom: 40px;
+}
+.video-grid .ver-tudo-btn{
+    padding: -20px;
+}
+.video-container iframe {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px  rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.video-container {
+    text-align: center;
+    flex: 1;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Efeito hover nos vídeos */
+.video-container iframe:hover {
+    transform: scale(1.05); /* Leve zoom ao passar o mouse */
+}
+
+.video-container p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+}
+.ver-tudo-btn {
+    display: flex; /* Ativa o modelo flexbox */
+    justify-content: center; /* Centraliza o texto horizontalmente */
+    align-items: center; /* Centraliza o texto verticalmente */
+    padding: 40px; /* Aumente o valor para deixar o botão maior */
+    background:linear-gradient(90deg, #371a4b 0%, rgb(88, 86, 86) 100%);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50%; /* Mantém o botão redondo */
+    font-weight: bold;
+    width: 60px; /* Largura e altura iguais para manter o formato circular */
+    height: 60px; 
+    transition: background-color 0.3s ease;
+    text-align: center; /* Garante que o texto fique alinhado no centro */
+    margin-top: 10%;
+    margin-right: 80px;
+}
+
+.ver-tudo-btn:hover {
+    background-color: #ffd633; /* Cor ao passar o mouse */
+    transform: scale(1.05);
+}
